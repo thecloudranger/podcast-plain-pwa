@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Podcast Player PWA</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="side-panel">
+        <h2>RSS Feeds</h2>
+        <ul id="rss-feed-list">
+          <!-- RSS feeds will be dynamically inserted here -->
+        </ul>
+      </div>
+      <div id="main-content">
+        <h1 id="podcast-title"></h1>
+        <div id="audio-player-container" class="hidden">
+          <h2 id="episode-title"></h2>
+          <audio id="audio-player" controls></audio>
+          <button id="skip-back">-10s</button>
+          <button id="skip-forward">+10s</button>
+        </div>
+        <table id="episodes-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Date</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Episodes will be dynamically inserted here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
